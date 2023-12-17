@@ -10,7 +10,6 @@ export function landingPage() {
     <div key="1" className="flex flex-col min-h-[100vh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="#">
-          <CloudIcon className="h-6 w-6" />
           <span className="sr-only">SaaS App</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -54,25 +53,5 @@ export function landingPage() {
         </nav>
       </footer>
     </div>
-  )
-}
-
-
-function CloudIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
-    </svg>
   )
 }
